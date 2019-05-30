@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+            <a href="#">Colombia</a>
+        </nav>
+        
+        <a href="#">Paraguai</a>
+        
+		<!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>    
+        	$( function() {
+				//$("nav a:nth(2)").css("color","red").css("text-decoration","none").css("display","block");
+                $("nav a:contains('Colombia')").css("color","red").css("text-decoration","none").css("display","block");
+			})
+            //alert("Essa página contém: " + $("nav a").length + " links.");
+        </script>   
+                
+    </body>
+</html>
